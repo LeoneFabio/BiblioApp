@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnGestioneAccesso"
+            style="@style/BOTTONE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/cagliostro"
+            android:minHeight="48dp"
+            android:text="@string/gestione_accesso" />
+
+        <Switch
+            android:id="@+id/swtTemaScuro"
+            style="@style/BOTTONE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/cagliostro"
+            android:minHeight="48dp"
+            android:text="@string/tema_scuro"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Button
+            android:id="@+id/btnInfoApp"
+            style="@style/BOTTONE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/cagliostro"
+            android:minHeight="48dp"
+            android:text="@string/info_applicazione" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="350dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/tvEliminaAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/cagliostro"
+            android:text="@string/elimina_account"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+</ScrollView>

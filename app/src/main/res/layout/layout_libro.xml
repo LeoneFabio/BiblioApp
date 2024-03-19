@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BACKGROUNDLIBRO"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageButton
+        android:id="@+id/ibCopertina"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:background="@color/trasparente"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_titolo"
+        style="@style/TEXTLIBRO"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/cagliostro"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

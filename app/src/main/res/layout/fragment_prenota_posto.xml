@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TEXTLIBRO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/cagliostro"
+            android:gravity="center"
+            android:text="@string/clicca_sulle_icone_per_compilare_i_campi"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            style="@style/BACKGROUNDLIBRO"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/prenotaPostoGiornoTv"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/cagliostro"
+                style="@style/TEXTLIBRO"
+                android:gravity="center"
+                android:text="@string/giorno"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/prenotaPostoGiornoEt"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:fontFamily="@font/cagliostro"
+                style="@style/TEXTLIBRO"
+                android:hint="@string/_01_01_1970"
+                android:inputType="date" />
+
+            <ImageButton
+                android:id="@+id/ibPrenotaGiorno"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/trasparente"
+                style="@style/ICONCALENDARIO" />
+        </LinearLayout>
+
+        <CalendarView
+            android:id="@+id/cvPrenotaGiorno"
+            style="@style/BACKGROUNDLIBRO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            style="@style/BACKGROUNDLIBRO"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/prenotaPostoOraInizioTv"
+                style="@style/TEXTLIBRO"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/cagliostro"
+                android:gravity="center"
+                android:text="@string/ora_inizio"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/prenotaPostoOraInizioEt"
+                style="@style/TEXTLIBRO"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:fontFamily="@font/cagliostro"
+                android:hint="@string/_00_00"
+                android:inputType="time" />
+
+            <ImageButton
+                android:id="@+id/ibOraInizio"
+                style="@style/ICONCCLOCK"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/trasparente" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/BACKGROUNDLIBRO"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/prenotaPostoOraFineTv"
+                style="@style/TEXTLIBRO"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/cagliostro"
+                android:gravity="center"
+                android:text="@string/ora_fine"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/prenotaPostoOraFineEt"
+                style="@style/TEXTLIBRO"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:fontFamily="@font/cagliostro"
+                android:hint="@string/_00_00_1"
+                android:inputType="time" />
+
+            <ImageButton
+                android:id="@+id/ibOraFine"
+                style="@style/ICONCCLOCK"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/trasparente" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/prenotaPostoBtn"
+            style="@style/BOTTONE"
+            android:layout_width="144dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/cagliostro"
+            android:text="@string/prenotaPosto"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</ScrollView>

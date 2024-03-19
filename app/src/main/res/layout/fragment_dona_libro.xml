@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/donaLibroTitoloTv"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/cagliostro"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="@string/titolo"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/donaLibroTitoloEt"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/cagliostro"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName"
+                    android:maxLength="50"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/donaLibroAutoreTv"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/cagliostro"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="@string/autoreDonaLibro"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/donaLibroAutoreEt"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/cagliostro"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName"
+                    android:maxLength="50"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider11"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/donaLibroStatoTv"
+                style="@style/TEXTLIBRO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/cagliostro"
+                android:text="@string/stato"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/donaLibroRg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/donaLibroOttimoRBtn"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/cagliostro"
+                    android:text="@string/ottimo" />
+
+                <RadioButton
+                    android:id="@+id/donaLibroBuonoRBtn"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/cagliostro"
+                    android:text="@string/buono" />
+
+                <RadioButton
+                    android:id="@+id/donaLibroDiscretoRBtn"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/cagliostro"
+                    android:text="@string/discreto" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider12"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/donaLibroDescrizioneTv"
+                style="@style/TEXTLIBRO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/cagliostro"
+                android:text="@string/descrizione"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etDescrizione"
+                style="@style/TEXTLIBRO"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/cagliostro"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/donaLibroInformazioneTv"
+                style="@style/TEXTLIBRO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/cagliostro"
+                android:paddingBottom="10dp"
+                android:text="@string/infoDonaLibro"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/donaLibroBtn"
+            style="@style/BOTTONE"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/cagliostro"
+            android:text="@string/dona"
+            android:textSize="34sp" />
+
+    </LinearLayout>
+</ScrollView>

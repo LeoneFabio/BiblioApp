@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BACKGROUNDLIBRO"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivCircle"
+            style="@style/ICONNOTIFICA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvNotifica"
+            style="@style/TEXTLIBRO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/cagliostro"
+            android:textSize="20sp" />
+
+</LinearLayout>

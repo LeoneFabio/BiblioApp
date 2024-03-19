@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlActivityMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/BACKGROUNDMAIN"
+    tools:context=".activity.MainActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleMargin="4dp"
+        style="@style/BACKGROUNTOOLBAR">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_account"
+                style="@style/ICONPROFILO"
+                android:layout_width="46dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="3dp"
+                android:clickable="true"
+                android:contentDescription="@string/visualizza_account"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/tv_toolbar_text"
+                style="@style/TEXTMENU"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="76dp"
+                android:layout_marginEnd="18dp"
+                android:layout_toStartOf="@+id/iv_notifiche"
+                android:layout_toEndOf="@id/iv_menu"
+                android:fontFamily="@font/baloo"
+                android:text="@string/biblioapp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/iv_notifiche"
+                app:layout_constraintStart_toEndOf="@id/iv_account"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_notifiche"
+                style="@style/ICONPRENOTA"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="14dp"
+                android:layout_toStartOf="@id/iv_account"
+                android:clickable="true"
+                android:contentDescription="@string/visualizza_notifiche"
+                android:minHeight="48dp"
+                 />
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                style="@style/ICONMENU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:contentDescription="@string/visualizza_menu"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                 />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <!-- Fragment Container Principale -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigation"
+        android:layout_below="@id/toolbar" >
+
+    </FrameLayout>
+
+    <!-- Fragment container menu -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_menu"
+        android:name="com.pwm.biblioteca.fragment.MenuFragment"
+        style="@style/BACKGROUNTOOLBAR"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentStart="true"
+        android:visibility="gone"
+        tools:layout="@layout/fragment_menu" />
+
+    <!-- Fragment container profilo -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_profilo"
+        android:name="com.pwm.biblioteca.fragment.LoginFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentEnd="true"
+        style="@style/BACKGROUNTOOLBAR"
+        android:visibility="gone"
+        tools:layout="@layout/fragment_login_registrazione" />
+
+    <!-- Bottom Navigation Layout -->
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        style="@style/BACKGROUNDMENUBAR" >
+
+    </com.etebarian.meowbottomnavigation.MeowBottomNavigation>
+
+</RelativeLayout>

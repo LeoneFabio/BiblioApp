@@ -1,0 +1,148 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Biblioteca" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <!-- Customize your theme here. -->
+
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+
+
+
+    <style name="BACKGROUNDMAIN">
+        <item name="android:background">@color/marroncino</item>
+    </style>
+
+    <style name="BACKGROUNTOOLBAR">
+        <item name="android:background">@color/marrone</item>
+    </style>
+
+    <style name="BACKGROUNDMENUBAR">
+        <item name="mbn_backgroundBottomColor">@color/marrone</item>
+        <item name="mbn_circleColor">@color/marrone</item>
+        <item name="mbn_countBackgroundColor">#ff6f00</item>
+        <item name="mbn_countTextColor">#ffffff</item>
+        <item name="mbn_defaultIconColor">@color/black</item>
+        <item name="mbn_rippleColor">#2f424242</item>
+        <item name="mbn_selectedIconColor">#000000</item>
+        <item name="mbn_shadowColor">#1f212121</item>
+    </style>
+
+
+
+
+    <style name="BACKGROUNDSPINNER">
+        <item name="android:popupBackground">@color/marrone</item>
+    </style>
+
+    <style name="BACKGROUNDLOGIN">
+        <item name="android:background">@color/marroncino</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+    <style name="BACKGROUNDNEWS">
+        <item name="android:background">@drawable/background_news</item>
+    </style>
+
+
+    <style name="TEXTTITOLIHOME">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TEXTLIBRO">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TEXTMENU">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="ICONDONA">
+        <item name="android:src">@drawable/ic_donalibro</item>
+    </style>
+
+    <style name="ICONPRENOTA">
+        <item name="android:src">@drawable/ic_prenota</item>
+    </style>
+
+    <style name="ICONFEEDBACK">
+        <item name="android:src">@drawable/ic_feedback</item>
+    </style>
+
+    <style name="ICONPRESTITI">
+        <item name="android:src">@drawable/ic_prestiti</item>
+    </style>
+
+    <style name="ICONIMPOSTAZIONI">
+        <item name="android:src">@drawable/ic_impostazioni</item>
+    </style>
+
+    <style name="ICONMENU">
+        <item name="android:src">@drawable/baseline_menu_24</item>
+    </style>
+
+    <style name="ICONPROFILO">
+        <item name="android:src">@drawable/baseline_account_box_24</item>
+    </style>
+
+    <style name="BACKGROUNDLIBRO">
+        <item name="android:background">@drawable/background_libro</item>
+    </style>
+
+    <style name="CIRCLEINDICATOR">
+        <item name="ci_drawable">@drawable/ic_circle</item>
+    </style>
+
+    <style name="BOTTONE">
+        <item name="backgroundTint">@color/azzurro</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ICONCALENDARIO">
+        <item name="android:src">@drawable/baseline_calendar_month_24</item>
+    </style>
+
+    <style name="ICONCCLOCK">
+        <item name="android:src">@drawable/ic_clock</item>
+    </style>
+
+    <style name="BACKGROUNDFEEDBACK">
+        <item name="android:background">@drawable/background_libro</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="BOTTONEDOWNLOAD">
+        <item name="backgroundTint">@color/azzurro</item>
+        <item name="android:src">@drawable/ic_download</item>
+    </style>
+
+    <style name="BOTTONEPLAY">
+        <item name="backgroundTint">@color/azzurro</item>
+        <item name="android:src">@drawable/ic_play</item>
+    </style>
+
+    <style name="BOTTONELEGGI">
+        <item name="backgroundTint">@color/azzurro</item>
+        <item name="android:src">@drawable/baseline_menu_book_24_nero </item>
+    </style>
+
+    <style name="ICONNOTIFICA">
+        <item name="android:src">@drawable/ic_circle</item>
+    </style>
+
+
+
+
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BACKGROUNDLIBRO"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="horizontal"
+    tools:context=".fragment.DigitalBooksFragment">
+
+    <ImageButton
+        android:id="@+id/ibCopertina"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/trasparente"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNomeLibroPreferiti"
+            style="@style/TEXTLIBRO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/cagliostro"
+            android:gravity="start"
+            android:text="@string/nomeDigitale"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAutoreLibroPreferiti"
+            style="@style/TEXTLIBRO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/cagliostro"
+            android:gravity="start"
+            android:text="@string/autoreDigitale"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibDownloadPdf"
+                style="@style/BOTTONEDOWNLOAD"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom|start"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/ibLeggiPdf"
+                style="@style/BOTTONELEGGI"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

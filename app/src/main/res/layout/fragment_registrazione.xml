@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contextClickable="false"
+        android:orientation="vertical"
+        android:paddingVertical="12dp"
+        android:textAlignment="center">
+
+        <ImageView
+            android:id="@+id/registrazioneIv"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="40dp" />
+
+        <View
+            android:id="@+id/divider13"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:id="@+id/registrazioneLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/testoLl"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nomeTv"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/cagliostro"
+                    android:gravity="bottom"
+                    android:paddingVertical="6dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/nomeRegistrazione"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cognomeTv"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/cagliostro"
+                    android:gravity="bottom"
+                    android:paddingVertical="6dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/cognomeRegistrazione"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sessoTv"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/cagliostro"
+                    android:gravity="bottom|start"
+                    android:paddingVertical="6dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/sesso"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/indirizzoTv"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/cagliostro"
+                    android:gravity="bottom"
+                    android:paddingVertical="6dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/indirizzo"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/etaTv"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/cagliostro"
+                    android:gravity="bottom"
+                    android:paddingVertical="6dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/eta"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cellulareTv"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/cagliostro"
+                    android:gravity="bottom"
+                    android:paddingVertical="6dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/cellulare"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/EmailTv"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/cagliostro"
+                    android:gravity="bottom"
+                    android:paddingVertical="6dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/email"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/usernameTv"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/cagliostro"
+                    android:gravity="bottom"
+                    android:paddingVertical="6dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/usernameRegistrazione"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/passwordTv"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/cagliostro"
+                    android:gravity="bottom"
+                    android:paddingVertical="6dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/passwordRegistrazione"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ripetiPasswordTv"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:fontFamily="@font/cagliostro"
+                    android:gravity="bottom"
+                    android:paddingVertical="6dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/ripeti_password"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/editTextLl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/nomeEt"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="15dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cagliostro"
+                    android:inputType="textPersonName"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/cognomeEt"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="15dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cagliostro"
+                    android:inputType="textPersonName"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <RadioGroup
+                    android:id="@+id/sessoRg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/maschioRb"
+                        style="@style/TEXTLIBRO"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/cagliostro"
+                        android:text="@string/uomo" />
+
+                    <RadioButton
+                        android:id="@+id/femminaRb"
+                        style="@style/TEXTLIBRO"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/cagliostro"
+                        android:text="@string/donna" />
+
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/indirizzoEt"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="15dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cagliostro"
+                    android:inputType="textPostalAddress"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/etaEt"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="15dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cagliostro"
+                    android:inputType="number"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/cellulareEt"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="15dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cagliostro"
+                    android:inputType="phone"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/emailEt"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="15dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cagliostro"
+                    android:inputType="textEmailAddress"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+
+                <EditText
+                    android:id="@+id/usernameEt"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="15dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cagliostro"
+                    android:inputType="textPersonName"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/passwordEt"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="15dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cagliostro"
+                    android:inputType="textPassword"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/ripetiPasswordEt"
+                    style="@style/TEXTLIBRO"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="15dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cagliostro"
+                    android:inputType="textPassword"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/RegistratiBtn"
+            style="@style/BOTTONE"
+            android:layout_width="155dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/cagliostro"
+            android:text="@string/registrati"
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+</ScrollView>
